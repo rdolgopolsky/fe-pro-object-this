@@ -36,3 +36,4 @@ export const hotel = {
     this.paidPerPlace();
   }
 };
+
