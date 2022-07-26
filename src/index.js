@@ -20,18 +20,19 @@ export const hotel = {
     if (!this.getActualFreePlaces() > 0) {
       return 'Sorry, we have not free spaces';
     }
+    
     if (guestMoney < this.priceByPlace) {
       return 'Sorry, you have not enough money';
     }
     
     guestMoney -= this.priceByPlace;
-  
+    
     this.guests[this.getLength()] = {
       firstName: guestName,
       lastName: guestLastName,
       money: guestMoney
     };
-  
+    
     this.paidPerPlace();
   }
 };
