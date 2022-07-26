@@ -21,7 +21,7 @@ export const hotel = {
       return 'Sorry, we have not free spaces';
     }
     if (guestMoney < this.priceByPlace) {
-      return 'Sorry, you don\'t have enough money';
+      return 'Sorry, you have not enough money';
     }
     
     guestMoney -= this.priceByPlace;
