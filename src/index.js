@@ -34,5 +34,11 @@ export const hotel = {
     };
 
     this.paidPerPlace();
+
+    return {
+      firstName: guestName,
+      lastName: guestLastName,
+      money: guestMoney,
+    };
   },
 };
