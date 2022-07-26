@@ -8,7 +8,7 @@ export const hotel = {
     return Object.keys(this.guests).length;
   },
   
-  getActualFreePlaces() {
+  getActualFreePlace() {
     return this.quantityOfPlaces - this.getLength();
   },
   
@@ -17,7 +17,7 @@ export const hotel = {
   },
   
   checkInGuest(guestName, guestLastName, guestMoney) {
-    if (!this.getActualFreePlaces() > 0) {
+    if (!this.getActualFreePlace() > 0) {
       return 'Sorry, we have not free spaces';
     }
     
