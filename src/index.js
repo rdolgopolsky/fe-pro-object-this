@@ -27,18 +27,16 @@ export const hotel = {
 
     guestMoney -= this.priceByPlace;
 
-    this.guests[this.getLength()] = {
+    let guest = {
       firstName: guestName,
       lastName: guestLastName,
       money: guestMoney,
     };
+
+    this.guests[this.getLength()] = guest;
 
     this.paidPerPlace();
 
-    return {
-      firstName: guestName,
-      lastName: guestLastName,
-      money: guestMoney,
-    };
+    return guest;
   },
 };
